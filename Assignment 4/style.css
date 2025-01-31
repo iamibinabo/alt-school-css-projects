@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9fefc;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 60rem;
+    background-color: transparent;
+    padding: 2rem;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  .info {
+    flex: 1 1 35%;
+    text-align: left;
+  }
+  
+  .info .icon {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .info h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .info p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+  }
+  
+  .form {
+    flex: 1 1 60%;
+    background-color: #ffffff;
+    border-radius: 0.625rem;
+    padding: 2rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    flex: 1;
+  }
+  
+  label {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    font-weight: bold;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.95rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    margin-top: 0.25rem;
+    box-sizing: border-box;
+  }
+  
+  input:focus,
+  select:focus {
+    outline: none;
+    border-color: #0bbf74;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0bbf74;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #099a5b;
+  }
+  
+  .agreement {
+    font-size: 0.75rem;
+    color: #666;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .agreement a {
+    color: #0bbf74;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding: 1rem;
+      gap: 2rem;
+    }
+  
+    .info {
+      text-align: center;
+      flex: 1 1 100%;
+    }
+  
+    .info .icon {
+      width: 3rem;
+      height: 3rem;
+      margin: 0 auto 1rem;
+    }
+  
+    .info h1 {
+      font-size: 1.5rem;
+    }
+  
+    .info p {
+      font-size: 0.9rem;
+    }
+  
+    .form {
+      flex: 1 1 100%;
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-row {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  
+    .btn {
+      font-size: 0.85rem;
+    }
+  
+    .info .icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  
+    .info h1 {
+      font-size: 1.3rem;
+    }
+  
+    .info p {
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+  
+    .form {
+      padding: 1rem;
+      box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    }
+  }
+  

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}/* General Body Styling */
+body {
+    background-color: #d6d6f5; /* Light purple background */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Card Styling */
+  .card {
+    background-color: #ffffff; /* White background */
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+  }
+  
+  /* Badge Styling */
+  .badge {
+    background-color: #ffea94; /* Yellow background */
+    color: #000;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 8px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Card Image Styling */
+  .card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Card Content Styling */
+  .card-content {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  /* Title Styling */
+  .card-content h2 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+  }
+  
+  .series {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #666;
+  }
+  
+  /* Paragraph Styling */
+  .card-content p {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
